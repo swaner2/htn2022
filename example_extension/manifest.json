@@ -12,8 +12,8 @@
   "action": {
   "default_popup": "popup.html",
   "default_icon": {
-    "48": "/assets/icons/48.png",
-    "128": "/assets/icons/128.png"
+    "48": "48.png",
+    "128": "128.png"
   }
 },
    
