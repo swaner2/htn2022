@@ -39,3 +39,6 @@ const notify = message => {
     }
   );
 };
+
+
+// adapted from https://www.codeinwp.com/blog/how-to-write-a-chrome-extension/
