@@ -9,7 +9,6 @@ notify.addEventListener( 'click', () => {
 } );
 
 
-const reset = document.getElementById( 'notify-reset' );
 const counter = document.getElementById( 'notify-count' );
 
 chrome.storage.local.get( ['notifyCount'], data => {
@@ -23,11 +22,6 @@ chrome.storage.onChanged.addListener( ( changes, namespace ) => {
     counter.innerHTML = value;
   }
 });
-
-reset.addEventListener( 'click', () => {
-  chrome.storage.local.clear();
-  text.value = '';
-} );
 
 const notify = message => {
   chrome.storage.local.get( ['notifyCount'], data => {
