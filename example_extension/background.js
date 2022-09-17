@@ -12,4 +12,4 @@ chrome.runtime.onMessage.addListener( data => {
   }
 });
 
-# onMessage event listener is used to find out when the push notifications
+// onMessage event listener is used to find out when the push notifications
