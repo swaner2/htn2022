@@ -1,3 +1,3 @@
 chrome.alarms.create('ALARM_NAME', {
-    periodInMinutes: 30
+    periodInMinutes: 1
 });
