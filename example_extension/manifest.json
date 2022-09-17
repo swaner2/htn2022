@@ -1,9 +1,13 @@
 {
   "manifest_version": 2,
-
   "name": "Take Care",
   "description": "This extension will remind you to take care of yourself",
   "version": "1.0",
+  "permissions" : [
+    "notifications",
+    "storage",
+    "alarms"
+],
 
   "action": {
   "default_popup": "popup.html",
@@ -11,12 +15,7 @@
     "48": "48.png",
     "128": "128.png"
   }
-    
-  "permissions": [
-    "notifications",
-    "storage",
-    "alarms"
-   ],
+},
    
   "background": {
   "service_worker": "background.js"
