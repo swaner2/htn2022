@@ -10,6 +10,7 @@ body {
     font-size: 21px;
     margin: 0;
     margin-bottom: 10px;
+    font-family: Roboto, system-ui, sans-serif;
 }
 
 .button {
