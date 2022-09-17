@@ -6,7 +6,7 @@ chrome.runtime.onMessage.addListener( data => {
                   type: 'basic',
                   title: 'Notify!',
                   message: data.message || 'Notify!',
-                  iconUrl: './assets/icons/128.png',
+                  iconUrl: '128.png',
               }
           );
   }
