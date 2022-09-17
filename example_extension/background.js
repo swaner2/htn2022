@@ -5,11 +5,9 @@ chrome.runtime.onMessage.addListener( data => {
               {
                   type: 'basic',
                   title: 'Notify!',
-                  message: data.message || 'Notify!',
+                  message: 'Drink some water!',
                   iconUrl: '128.png',
               }
           );
   }
 });
-
-// onMessage event listener is used to find out when the push notifications
