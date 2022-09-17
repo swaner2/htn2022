@@ -1,15 +1,5 @@
-chrome.runtime.onMessage.addListener( data => {
-  if ( data.type === 'notification' ) {
-          chrome.notifications.create(
-              '',
-              {
-                  type: 'basic',
-                  title: 'Notify!',
-                  message: data.message || 'Notify!',
-                  iconUrl: '128.png',
-              }
-          );
-  }
+chrome.alarms.onAlarm.addListener((alarm) => {
+    if (alarm.name === "testAlarm") {
+        //our alarm is running, send notification
+    }
 });
-
-// onMessage event listener is used to find out when the push notifications
