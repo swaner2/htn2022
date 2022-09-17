@@ -47,19 +47,19 @@ body {
 }
 
 .button.primary {
-    background: rgb(161, 202, 241);
+    background: rgb(188, 212, 230);
     color: #fff;
-    border-color: rgb(161, 202, 241);
+    border-color: rgb(188, 212, 230);
 }
 
 .button.primary:hover {
-    background: rgba( 25,217,255, 1.0 );
+    background: rgba( 161, 202, 241, 1.0 );
     box-shadow: 0 1px 2px 0 rgba( 66, 133, 244, .3),
     0 1px 3px 1px rgba( 66, 133, 244, .15);
 }
 
 textarea {
-    border: 2px solid rgba(25,217,255, 0.5 );
+    border: 2px solid rgba(161, 202, 241, 0.5 );
     padding: 8px;
     border-radius: 4px;
     display: block;
