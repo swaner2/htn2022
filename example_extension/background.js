@@ -1,11 +1,13 @@
-chrome.alarms.onAlarm.addListener((alarm) => {
-    if (alarm.name === "testAlarm") {
-       chrome.notifications.create('test', {
-            type: 'basic',
-            iconUrl: 'images/1.png',
-            title: 'Test Message',
-            message: 'You are awesome!',
-            priority: 2
-        });
-    }
+chrome.runtime.onMessage.addListener( data => {
+  if ( data.type === 'notification' ) {
+          chrome.notifications.create(
+              '',
+              {
+                  type: 'basic',
+                  title: 'Notify!',
+                  message: 'Drink some water!',
+                  iconUrl: '128.png',
+              }
+          );
+  }
 });
