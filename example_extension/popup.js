@@ -12,11 +12,3 @@ button.addEventListener('click', () => {
     progress = progress.toFixed(2) * 100 + '%'
     percent = progress
   })
-
-chrome.alarms.onAlarm.addEventListener((alarm) => {
-    if (alarm.name === "testAlarm") {
-        chrome.notification.create('popup', {
-            priority: 2
-        })
-    }
-})
