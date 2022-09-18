@@ -4,6 +4,7 @@ document.body.insertAdjacentElement('afterbegin', button);
 
 let clicker_counter = 0
 let progress = 0
+let percent = 0
 
 button.addEventListener('click', () => {
     console.log('Clicked');
