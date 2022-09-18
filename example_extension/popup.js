@@ -15,7 +15,6 @@ button.addEventListener('click', () => {
     progress = clicker_counter * 0.05
     progress = progress.toFixed(2) * 100 + '%'
     percent = progress
-    percent.attr('id', 'percent');
   })
 
 chrome.alarms.onAlarm.addEventListener((alarm) => {
