@@ -3,7 +3,7 @@ button.textContent = 'I drank water!'
 document.body.insertAdjacentElement('afterbegin', button);
 
 let clicker_counter = 0
-var progress = 0
+let progress = 0
 
 button.addEventListener('click', () => {
     console.log('Clicked');
