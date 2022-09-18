@@ -1,7 +1,3 @@
-var script = document.createElement('script');
-script.src = 'https://code.jquery.com/jquery-3.6.0.min.js';
-document.getElementsByTagName('head')[0].appendChild(script);
-
 let button = document.getElementById('notify-button');
 button.textContent = 'I drank water!'
 document.body.insertAdjacentElement('afterbegin', button);
@@ -17,11 +13,3 @@ button.addEventListener('click', () => {
     progress = progress.toFixed(2) * 100 + '%'
     percent = progress
   })
-
-chrome.alarms.onAlarm.addEventListener((alarm) => {
-    if (alarm.name === "testAlarm") {
-        chrome.notification.create('popup', {
-            priority: 2
-        })
-    }
-})
